@@ -143,12 +143,15 @@ footer p {
     box-sizing: border-box;
     max-width: 100%;
 }
+
 .blog-container a {
     color: #316262;
 }
+
 .blog-container a:hover {
     color: #A35151;
 }
+
 .blog-cover {
     background: url("../img/imgblog.jpg");
     background-size: cover;
@@ -261,6 +264,7 @@ footer p {
 .about-container h1 {
     margin-top: 10px;
 }
+
 .about-container p {
     margin-top: 30px;
     padding: 0 0 10px 5px;
@@ -268,8 +272,35 @@ footer p {
     border-left: 1px solid gainsboro;
     transition: all 0.3s;
 }
+
 .about-container p:hover {
-    border-left: 3px solid gainsboro;
+    border-left: 5px solid gainsboro;
+}
+
+.services {
+    width: 70%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.services img {
+    max-width: 100%;
+}
+
+.services-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px 100px;
+}
+.services-container-block {
+    border-left: 1px solid gainsboro;
+    padding: 5px;
+    transition: all .3s;
+}
+
+.services-container-block:hover {
+    border-left: 5px solid gainsboro;
 }
 @media screen and (max-width: 768px) {
     .top-nav a:not(:first-child) {
@@ -307,6 +338,9 @@ footer p {
     .blog-container {
         width: 28rem;
     }
+    .services-container {
+        grid-template-columns: auto;
+    }
 }
 
 @media screen and (max-width: 420px){
@@ -332,4 +366,5 @@ footer p {
     .blog-container {
         width: 20rem;
     }
+
 }
