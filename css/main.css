@@ -98,13 +98,16 @@ footer nav a:hover {
     border-bottom: 1px solid white;
 }
 
-.social img {
+.social a img {
     margin: 10px;
+    max-width: 50px;
+    max-height: 50px;
+    background-color: white;
+    border-radius: 15px;
 }
 
-.social img:hover {
+.social a img:hover {
     background-color: #6B6B6B;
-    border-radius: 45px;
 }
 footer p {
     color: darkgrey;
